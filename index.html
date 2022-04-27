@@ -4,14 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Mars Rover Project | GRET</title>
 </head>
+
 <body>
+    <!-- Site title -->
     <h1>Mars Rover Photos</h1>
-    <div id="photos">
-        <img src="" id = "nasaPhotos" width="500px" height="500px">
-    </div>
+
+    
+   
+
+  <div id="container">
+
+        
+            <!-- dropdown for rovers starts -->
+            <div id="rovers">
+                Select Rover
+                <select class="formSelection">
+                    <option value="opportunity">Opportunity</option>
+                    <option value="curiosity">Curiosity</option>
+                    <option value="spirit">Spirit</option>
+                    
+                    
+
+                </select>
+
+            </div>
+            <!-- dropdown for rovers ends -->
+
+            <!-- dropdown for cameras starts -->
+            <div id="drop">
+                Select Camera
+                <select class="formSelection">
+                    <option value="fhaz">Front Hazard Avoidance Camera</option>
+                    <option value="rhaz">Rear Hazard Avoidance Camera</option>
+                    <option value="mast">Mast Camera</option>
+                    <option value="chemcam">Chemistry and Camera Complex</option>
+                    <option value="mahli">Mars Hand Lens Imager</option>
+                    <option value="mardi"> Mars Descent Imager</option>
+                    <option value="navcam">Navigation Camera</option>
+                    <option value="minites">MINITES</option>
+                </select>
+            </div>
+            <!-- dropdown for cameras ends -->
+        
+
+            <!-- calendar starts -->
+
+            <div id="cal">
+                <!-- <label for = "date"></label> -->
+                Date
+                <!-- <label for="taken-on">Date</label> -->
+                <input onchange="detect(event)" type="date" id="take-on" class="formSelection" name="taken-on value="2005-12-12" min="2005-12-12" max="2017-01-28">
+            </div>
+            
+
+            <!-- calendar ends -->
+            <div id="search">
+                <button onclick="showDetails()" id="btn" class="formSelection">Search</button>
+            </div>
+
+  </div>
+
+
+ 
+    <!-- Rover Details -->
+  <div id="details">
+  </div>
+
+    
+ 
+
     <script src="./app.js" defer ></script>
+    <script src="./dom.js" defer ></script>
+
+
 </body>
 </html>
