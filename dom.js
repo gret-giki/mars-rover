@@ -52,9 +52,11 @@ button.addEventListener('click', event=>{
             <h3>Name: ${data.photos[4].rover.name}</h3>
             <h4>Launch: ${data.photos[0].rover.launch_date}</h4>
             <h4>Landed: ${data.photos[0].rover.landing_date} </h4>
-            <div>
+
+            <div style="height: 300px">
             <img src="${data.photos[0].img_src}"/> 
             </div>
+
         
         `
         
