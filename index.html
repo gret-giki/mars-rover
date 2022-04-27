@@ -21,7 +21,9 @@
             <!-- dropdown for rovers starts -->
             <div id="rovers">
                 Select Rover
-                <select>
+
+                <select class="formSelection">
+
                     <option value="opportunity">Opportunity</option>
                     <option value="curiosity">Curiosity</option>
                     <option value="spirit">Spirit</option>
@@ -36,7 +38,9 @@
             <!-- dropdown for cameras starts -->
             <div id="drop">
                 Select Camera
-                <select>
+
+                <select class="formSelection">
+
                     <option value="fhaz">Front Hazard Avoidance Camera</option>
                     <option value="rhaz">Rear Hazard Avoidance Camera</option>
                     <option value="mast">Mast Camera</option>
@@ -53,13 +57,18 @@
             <!-- calendar starts -->
 
             <div id="cal">
-                <label for="taken-on">Date</label>
-                <input onchange="detect(event)" type="date" id="take-on" name="taken-on value="2005-12-12" min="2005-12-12" max="2017-01-28">
+
+                <!-- <label for = "date"></label> -->
+                Date
+                <!-- <label for="taken-on">Date</label> -->
+                <input onchange="detect(event)" type="date" id="take-on" class="formSelection" name="taken-on value="2005-12-12" min="2005-12-12" max="2017-01-28">
             </div>
+            
 
             <!-- calendar ends -->
-            <div>
-                <button id="btn">Search</button>
+            <div id="search">
+                <button onclick="showDetails()" id="btn" class="formSelection">Search</button>
+
             </div>
 
   </div>
